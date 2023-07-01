@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>My first multiplayer online game</title>
+    <meta
+      name="description"
+      content="A cool game I made while following dasilvacontin's youtube video"
+    />
+
+    <style>
+      html,
+      body,
+      canvas {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+
+      canvas,
+      img {
+        position: fixed;
+        top: 0;
+        left: 0;
+      }
+    </style>
+    <script src="/socket.io/socket.io.js"></script>
+  </head>
+  <body>
+    <script src="error-bubble.js"></script>
+
+    <!-- Snowman outline -->
+    <!--   <img src="https://cdn.glitch.global/0c39ae4a-642a-48a7-875d-5c9f7c5ae033/snowman.png?v=1682165916698"> -->
+
+    <canvas id="myCanvas"></canvas>
+
+    <!-- Grid -->
+    <img
+      src="https://cdn.glitch.global/0c39ae4a-642a-48a7-875d-5c9f7c5ae033/grid.png?v=1682165208762"
+    />
+
+    <script>
+      const canvas = document.getElementById("myCanvas");
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+      const ctx = canvas.getContext("2d");
+
+      // Comments are lines that start with // or surrounded by /* */
+      // Comments don't get executed
+
+      /* START OF YOUR CODE */
+
+      // If you can't edit, make sure to click the "Remix" button!
+      ctx.fillRect(100, 200, 150, 50);
+
+      /* END OF YOUR CODE */
+    </script>
+  </body>
+</html>
